@@ -1,0 +1,12 @@
+# Python byte-compiled
+__pycache__/
+
+# Cries in Macintosh
+.DS_Store
+
+# AoC Cookie
+cookie.txt
+
+# Anti-lawsuit ignore
+input/
+examples/

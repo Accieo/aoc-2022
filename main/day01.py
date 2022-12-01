@@ -26,7 +26,7 @@ def common():
 
 def part_one():
     elves = common()
-    return max(elves, key=lambda x: x.calories)
+    return max(elves, key=lambda x: x.calories).calories
 
 def part_two():
     elves = common()
@@ -34,5 +34,5 @@ def part_two():
     return sum([elf.calories for elf in elves[0:3]])
 
 if __name__ == '__main__':
-    print(part_one().calories)
+    print(part_one())
     print(part_two())

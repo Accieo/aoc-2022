@@ -1,8 +1,15 @@
+with open('examples/day0X.txt', 'r') as file:
+    data = file.readlines()
+
+def common():
+    return
+
 def part_one():
-    pass
+    return
 
 def part_two():
-    pass
+    return
 
 if __name__ == '__main__':
-    pass
+    print(part_one())
+    print(part_two())

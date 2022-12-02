@@ -1,3 +1,7 @@
 # Advent of Code 2022
 
-[Advent of code 2022](https://adventofcode.com/2022) solved in Python! :snake:
+[AoC](https://adventofcode.com/2022) solved in Python! :snake:
+
+## Solutions
+- [Day 1](https://github.com/Accieo/aoc-2022/blob/master/main/day01.py)
+- [Day 2](https://github.com/Accieo/aoc-2022/blob/master/main/day02.py)

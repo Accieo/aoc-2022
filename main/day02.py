@@ -19,9 +19,9 @@ translation_part_one = {
 }
 
 translation_part_two = {
-    'Rock': { 'W': 'Scissors',  'L': 'Paper' },
-    'Paper': { 'W': 'Rock',  'L': 'Scissors' },
-    'Scissors': { 'W': 'Paper',  'L': 'Rock' }
+    'Rock': { 'W': 'Scissors', 'L': 'Paper' },
+    'Paper': { 'W': 'Rock', 'L': 'Scissors' },
+    'Scissors': { 'W': 'Paper', 'L': 'Rock' }
 }
 
 with open('input/day02.txt', 'r') as file:

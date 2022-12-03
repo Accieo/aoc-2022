@@ -1,7 +1,7 @@
-with open('examples/day0X.txt', 'r') as file:
-    data = file.readlines()
-
 def common():
+    with open('examples/day0X.txt', 'r') as file:
+        data = file.readlines()
+
     return
 
 def part_one():

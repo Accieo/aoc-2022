@@ -9,10 +9,10 @@ prio_lowercase = { letter:prio for letter, prio in zip(ascii_lowercase, range(1,
 prio_uppercase = { letter:prio for letter, prio in zip(ascii_uppercase, range(27,53)) }
 prio_list = { **prio_lowercase, **prio_uppercase }
 
-with open('input/day03.txt', 'r') as file:
-    data = file.read().splitlines()
-
 def common():
+    with open('input/day03.txt', 'r') as file:
+        data = file.read().splitlines()
+
     rucksack = Rucksack()
     rucksacks = list()
     for items in data:

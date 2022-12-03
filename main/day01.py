@@ -5,11 +5,11 @@ class Elf:
     inventory: list = field(default_factory=list)
     calories: int = 0
 
-with open('input/day01.txt', 'r') as file:
-    data = file.readlines()
-    data = list(map(lambda x: x.strip(), data))
-
 def common():
+    with open('input/day01.txt', 'r') as file:
+        data = file.readlines()
+        data = list(map(lambda x: x.strip(), data))
+
     elf = Elf()
     elves = list()
     for n, item in enumerate(data):

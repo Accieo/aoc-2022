@@ -24,10 +24,10 @@ translation_part_two = {
     'Scissors': { 'W': 'Paper', 'L': 'Rock' }
 }
 
-with open('input/day02.txt', 'r') as file:
-    data = file.readlines()
-
 def common():
+    with open('input/day02.txt', 'r') as file:
+        data = file.readlines()
+
     moves = Moves()
     for line in data:
         opponent_move, player_move = line.strip().split(' ')

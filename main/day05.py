@@ -43,9 +43,9 @@ def part_one():
             grabbed_crate = stacks[move.src].pop(0)
             stacks[move.dst].insert(0, grabbed_crate)
 
-    top_crates = ''.join([v[0] for _, v in stacks.items()])
+    top_crates = ''.join([v[0] for _, v in stacks.items()]).replace('[','').replace(']','')
 
-    return top_crates.replace('[','').replace(']','')
+    return top_crates
 
 def part_two():
     stacks, moves = common()
@@ -56,9 +56,9 @@ def part_two():
         stacks[move.dst] = grabbed_crates + stacks[move.dst]
         grabbed_crates = list()
 
-    top_crates = ''.join([v[0] for _, v in stacks.items()])
+    top_crates = ''.join([v[0] for _, v in stacks.items()]).replace('[','').replace(']','')
 
-    return top_crates.replace('[','').replace(']','')
+    return top_crates
 
 if __name__ == '__main__':
     print(part_one())

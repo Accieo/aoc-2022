@@ -7,3 +7,4 @@
 - [Day 2](https://github.com/Accieo/aoc-2022/blob/master/main/day02.py)
 - [Day 3](https://github.com/Accieo/aoc-2022/blob/master/main/day03.py)
 - [Day 4](https://github.com/Accieo/aoc-2022/blob/master/main/day04.py)
+- [Day 5](https://github.com/Accieo/aoc-2022/blob/master/main/day05.py)

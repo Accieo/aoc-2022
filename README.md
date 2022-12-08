@@ -9,3 +9,5 @@
 - [Day 4](https://github.com/Accieo/aoc-2022/blob/master/main/day04.py)
 - [Day 5](https://github.com/Accieo/aoc-2022/blob/master/main/day05.py)
 - [Day 6](https://github.com/Accieo/aoc-2022/blob/master/main/day06.py)
+- [Day 7]() - Still fighting it :punch:
+- [Day 8](https://github.com/Accieo/aoc-2022/blob/master/main/day08.py)

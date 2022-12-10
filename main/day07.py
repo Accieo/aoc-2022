@@ -54,7 +54,6 @@ def part_one():
     dirs = common()
 
     size_filtered = {k: v for k, v in dirs.items() if v <= 100_000}
-
     total = sum(size_filtered.values())
 
     return total
@@ -66,9 +65,7 @@ def part_two():
     req_space = 30_000_000
 
     free_space = disk_space - dirs['/']
-
     size_filtered = {k: v for k, v in dirs.items() if free_space + v >= req_space}
-
     smallest_dir = min(size_filtered.values())
 
     return smallest_dir

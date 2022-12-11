@@ -46,12 +46,12 @@ def part_two():
     for i, j in zip(range(0, len(register) - 40, 40), range(40, len(register), 40)):
         sections.append(register[i:j])
 
-    crt = [['.' for _ in range(40)] for _ in range(6)]
+    crt = [[' ' for _ in range(40)] for _ in range(6)]
 
     for s, section in enumerate(sections):
         for i, num in enumerate(section):
             if num == i - 1 or num == i or num == i + 1:
-                crt[s][i] = '#'
+                crt[s][i] = '█'
 
     print_crt(crt)
 

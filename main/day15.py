@@ -6,9 +6,6 @@ class Beacon:
     x: int
     y: int
 
-    def __hash__(self):
-        return hash((self.x, self.y))
-
 @dataclass
 class Sensor:
     x: int

@@ -5,7 +5,8 @@ heights = { k:v for k, v in zip(ascii_lowercase, range(len(ascii_lowercase))) }
 heights['S'] = heights['a']
 heights['E'] = heights['z']
 
-def bfs_neighbors(i: int, j: int, max_y: int, max_x: int):
+def bfs_neighbors(i: int, j: int, max_y: int, max_x: int) -> list[tuple[int, int]]:
+    "Returns a list of the neighbors for the given (i, j) coords."
     up = (i - 1, j) if i != 0 else (i, j)
     down = (i + 1, j) if i != max_y else (i, j)
     left = (i, j - 1) if j != 0 else (i, j)

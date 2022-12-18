@@ -19,5 +19,5 @@
 | [Day 12](https://github.com/Accieo/aoc-2022/blob/master/main/day12.py) | :star: :star: |
 | [Day 13](https://github.com/Accieo/aoc-2022/blob/master/main/day13.py) | :star: :star: |
 | [Day 14](https://github.com/Accieo/aoc-2022/blob/master/main/day14.py) | :star: :star: |
-| [Day 15](https://github.com/Accieo/aoc-2022/blob/master/main/day15.py) | :star: :soon: |
+| [Day 15](https://github.com/Accieo/aoc-2022/blob/master/main/day15.py) | :star: :star: |
 | [Day 16](https://github.com/Accieo/aoc-2022/blob/master/main/day16.py) | :soon: :soon: |

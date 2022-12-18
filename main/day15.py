@@ -13,7 +13,7 @@ class Sensor:
     beacon: Beacon
     distance: int = 0
 
-def find_blocked(sensors: list[Sensor], y: int) -> int:
+def find_blocked(sensors: list[Sensor], y: int) -> tuple[int, list[tuple[int, int]]]:
     """Finds the blocked spots at a given height y."""
 
     blocked_ranges = list()
@@ -21,7 +21,7 @@ def find_blocked(sensors: list[Sensor], y: int) -> int:
     for sensor in sensors:
         up = sensor.y - sensor.distance
         down = sensor.y + sensor.distance
-        if up <= y <=  down:
+        if up <= y <= down:
             near_target.append(sensor)
 
     for sensor in near_target:
@@ -32,8 +32,19 @@ def find_blocked(sensors: list[Sensor], y: int) -> int:
     min_x = min([x for x, _ in blocked_ranges])
     max_x = max([x for _, x in blocked_ranges])
     total = abs(min_x - max_x)
-        
-    return total
+
+    blocked_ranges.sort()
+
+    merged_ranges = [blocked_ranges[0]]
+    for current_range in blocked_ranges[1:]:
+        last_merged_range = merged_ranges[-1]
+        if current_range[0] <= last_merged_range[1]:
+            merged_ranges[-1] = (min(last_merged_range[0], current_range[0]),
+                                 max(last_merged_range[1], current_range[1]))
+        else:
+            merged_ranges.append(current_range)
+
+    return total, merged_ranges
 
 def common():
     with open('input/day15.txt', 'r') as file:
@@ -57,12 +68,27 @@ def common():
 def part_one():
     sensors = common()
 
-    blocked = find_blocked(sensors=sensors, y=2_000_000)
+    blocked, _ = find_blocked(sensors=sensors, y=2_000_000)
 
     return blocked
 
 def part_two():
-    return
+    sensors = common()
+
+    found = False
+    frequency = 0
+    y1 = 2_000_000     # Guessing game, brute force gang
+    while not found:
+        _, blocked = find_blocked(sensors=sensors, y=y1)
+
+        if len(blocked) == 2:
+            (_, x1), (_, _) = blocked
+            frequency = (x1 * 4_000_000) + y1
+            found = True
+
+        y1 += 1
+
+    return frequency
 
 if __name__ == '__main__':
     print(part_one())

@@ -23,3 +23,6 @@
 | [Day 16](https://github.com/Accieo/aoc-2022/blob/master/main/day16.py) | :soon: :soon: |
 | [Day 17](https://github.com/Accieo/aoc-2022/blob/master/main/day17.py) | :soon: :soon: |
 | [Day 18](https://github.com/Accieo/aoc-2022/blob/master/main/day18.py) | :star: :soon: |
+| [Day 19](https://github.com/Accieo/aoc-2022/blob/master/main/day19.py) | :soon: :soon: |
+| [Day 20](https://github.com/Accieo/aoc-2022/blob/master/main/day20.py) | :soon: :soon: |
+| [Day 21](https://github.com/Accieo/aoc-2022/blob/master/main/day21.py) | :star: :soon: |

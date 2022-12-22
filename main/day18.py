@@ -1,4 +1,3 @@
-from functools import reduce
 from dataclasses import dataclass
 
 @dataclass
@@ -36,7 +35,7 @@ def part_one():
     return surface
 
 def part_two():
-    return
+    return 
 
 if __name__ == '__main__':
     print(part_one())

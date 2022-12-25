@@ -29,3 +29,4 @@
 | [Day 22](https://github.com/Accieo/aoc-2022/blob/master/main/day22.py) | :soon: :soon: |
 | [Day 23](https://github.com/Accieo/aoc-2022/blob/master/main/day23.py) | :soon: :soon: |
 | [Day 24](https://github.com/Accieo/aoc-2022/blob/master/main/day24.py) | :soon: :soon: |
+| [Day 25](https://github.com/Accieo/aoc-2022/blob/master/main/day25.py) | :star: :soon: |
